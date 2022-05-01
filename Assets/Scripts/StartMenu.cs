@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEditor;
+
+// #if UNITY_EDITOR 
+//  using UnityEditor;
+// #endif 
 
 public class StartMenu : MonoBehaviour
 {
@@ -69,7 +72,7 @@ public class StartMenu : MonoBehaviour
     public void StartGame()
     {
         Debug.Log(selectedSkin);
-        PrefabUtility.SaveAsPrefabAsset(playerskin, "Assets/selectedskin.prefab");
+        // PrefabUtility.SaveAsPrefabAsset(playerskin, "Assets/selectedskin.prefab");
         SceneManager.LoadScene("Level 1");
     }
 

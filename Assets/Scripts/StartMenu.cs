@@ -43,24 +43,28 @@ public class StartMenu : MonoBehaviour
         Debug.Log(selectedSkin);
     }
 
-    public void SelectVirtualBoy()
+    public void SelectVirtualGuy()
     {
         sr.sprite = skins[0];
+        selectedSkin = 0;
     }
 
-    public void SelectPinkMan()
+    public void SelectPinkGuy()
     {
         sr.sprite = skins[1];
+        selectedSkin = 1;
     }
 
     public void SelectNinjaFrog()
     {
         sr.sprite = skins[2];
+        selectedSkin = 2;
     }
 
     public void SelectMaskDude()
     {
         sr.sprite = skins[3];
+        selectedSkin = 3;
     }
 
     public int getSelectedSkin()
